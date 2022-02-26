@@ -22,43 +22,48 @@
       </div>
     </div>
     <div class="right-side">
-      <p class="form-description">This is not a real online service! You know you need something like this in your life
+      <p class="form-description px-2">This is not a real online service! You know you need something like this in your
+        life
         to help you realize your deepest dreams.
         Sign up now to get started.
       </p>
 
-      <div class="form-msg">You know you want to</div>
+      <div class="form-msg px-2">You <span class="italic">know</span> you want to</div>
       <form action="">
-        <div class="form-container">
+        <div class="form-container px-2">
           <div class="form-header">Let's do this!</div>
-          <div class="input-group">
-            <label for="first-name">FIRST NAME</label>
-            <input name="first-name" id="first-name" type="text">
-          </div>
-          <div class="input-group">
-            <label for="last-name">LAST NAME</label>
-            <input name="last-name" id="last-name" type="text">
-          </div>
-          <div class="input-group">
-            <label for="email">EMAIL</label>
-            <input name="email" id="email" type="email">
-          </div>
-          <div class="input-group">
-            <label for="phone-number">PHONE NUMBER</label>
-            <input name="phone-number" id="phone-number" type="text">
-          </div>
-          <div class="input-group">
-            <label for="password">PASSWORD</label>
-            <input name="password" id="password" type="text">
-          </div>
-          <div class="input-group">
-            <label for="conf-password">CONFIRM PASSWORD</label>
-            <input name="conf-password" id="conf-password" type="text">
+          <div class="input-group-container">
+            <div class="input-group">
+              <label for="first-name">FIRST NAME</label>
+              <input name="first-name" id="first-name" type="text">
+            </div>
+            <div class="input-group">
+              <label for="last-name">LAST NAME</label>
+              <input name="last-name" id="last-name" type="text">
+            </div>
+            <div class="input-group">
+              <label for="email">EMAIL</label>
+              <input name="email" id="email" type="email">
+            </div>
+            <div class="input-group">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input name="phone-number" id="phone-number" type="text">
+            </div>
+            <div class="input-group">
+              <label for="password">PASSWORD</label>
+              <input name="password" id="password" type="text" class="error">
+              <span></span>
+            </div>
+            <div class="input-group">
+              <label for="conf-password">CONFIRM PASSWORD</label>
+              <input name="conf-password" id="conf-password" type="text" class="error">
+              <span></span>
+            </div>
           </div>
         </div>
-        <button type="submit">Create Account</button>
+        <button type="submit" class="btn ml-2">Create Account</button>
       </form>
-      <div class="login-text">
+      <div class="login-text px-2">
         Already have an account? <a href="#">Log in</a>
       </div>
     </div>
