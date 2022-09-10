@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url("./resources/Norse-Bold.otf") format("opentype");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +23,7 @@ a:visited {
   height: 100%;
   width: 100%;
   display: flex;
+  font-family: "Outfit", sans-serif;
 }
 
 .left-side {
@@ -36,7 +44,8 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Norse Bold", cursive;
 }
 
 .logo img {
