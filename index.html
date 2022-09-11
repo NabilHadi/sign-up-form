@@ -50,17 +50,38 @@
           <div class="input-group">
             <label for="password">PASSWORD</label>
             <input type="text" name="password" id="password">
+            <span></span>
           </div>
           <div class="input-group">
             <label for="confirm_password">CONFIRM PASSWORD</label>
             <input type="text" name="confirm_password" id="confirm_password">
+            <span></span>
           </div>
         </fieldset>
-        <button>Create Account</button>
+        <button type="submit">Create Account</button>
       </form>
       <div class="bottom">Already have an account? <a href="#" class="log-in">Log in</a></div>
     </div>
   </div>
+
+  <script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const passwordInput = document.querySelector("input#password");
+      const confirmPasswordInput = document.querySelector("input#confirm_password");
+
+      if (passwordInput.value !== confirmPasswordInput.value) {
+        passwordInput.classList.add("bad-input");
+        confirmPasswordInput.classList.add("bad-input");
+      } else {
+        passwordInput.classList.remove("bad-input");
+        confirmPasswordInput.classList.remove("bad-input");
+      }
+    })
+  </script>
+
 </body>
 
 </html>
