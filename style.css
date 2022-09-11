@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
 
 @font-face {
   font-family: "Norse Bold";
@@ -69,4 +69,101 @@ a:visited {
 
 .right-side {
   flex: 1 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9fafb;
+  color: rgb(20, 20, 44);
+}
+
+.header,
+.inputs-container {
+  padding-left: 2rem;
+}
+
+form button,
+.bottom {
+  margin-left: 2rem;
+}
+
+em {
+  font-style: italic;
+}
+
+.header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-right: 2rem;
+}
+
+.header P:last-child {
+  margin: 1rem 0;
+}
+
+form {
+  margin: 1rem 0;
+}
+
+.inputs-container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 1rem;
+  gap: 1rem;
+}
+
+.legend {
+  flex: 1 100%;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  flex: 1 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+
+.input-group input {
+  width: 70%;
+  padding: 3px 4px;
+  outline: none;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 5%;
+}
+
+.input-group input:focus {
+  outline: none;
+  border: 1px solid rgb(128, 128, 235);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+form button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #596d48;
+  color: white;
+}
+
+.bottom {
+  font-size: 0.8rem;
+}
+
+.log-in {
+  color: #596d48;
+  text-decoration: none;
 }
