@@ -11,77 +11,7 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="left-side">
-      <div class="logo">
-        <img src="./resources/odin-lined.png" alt="Logo">
-        <div class="logo-name">Odin</div>
-      </div>
-      <div class="image-credit">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Hale West</a> on <a
-          href="https://unsplash.com/">Unsplash</a>
-      </div>
-    </div>
-    <div class="right-side">
-      <div class="header">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize
-          your deapest dreams.</p>
-        <p>Sign up <em>now</em> to get started.</p>
-        <p>You <em>know</em> you want to.</p>
-      </div>
-      <form>
-        <fieldset class="inputs-container">
-          <div class="legend">Let's do this!</div>
-          <div class="input-group">
-            <label for="first_name">FIRST NAME</label>
-            <input type="text" name="first_name" id="first_name">
-          </div>
-          <div class="input-group">
-            <label for="last_name">LAST NAME</label>
-            <input type="text" name="last_name" id="last_name">
-          </div>
-          <div class="input-group">
-            <label for="email">EMAIL</label>
-            <input type="text" name="email" id="email">
-          </div>
-          <div class="input-group">
-            <label for="phone_number">PHONE NUMBER</label>
-            <input type="text" name="phone_number" id="phone_number">
-          </div>
-          <div class="input-group">
-            <label for="password">PASSWORD</label>
-            <input type="text" name="password" id="password">
-            <span></span>
-          </div>
-          <div class="input-group">
-            <label for="confirm_password">CONFIRM PASSWORD</label>
-            <input type="text" name="confirm_password" id="confirm_password">
-            <span></span>
-          </div>
-        </fieldset>
-        <button type="submit">Create Account</button>
-      </form>
-      <div class="bottom">Already have an account? <a href="#" class="log-in">Log in</a></div>
-    </div>
-  </div>
-
-  <script>
-    const form = document.querySelector("form");
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      const passwordInput = document.querySelector("input#password");
-      const confirmPasswordInput = document.querySelector("input#confirm_password");
-
-      if (passwordInput.value !== confirmPasswordInput.value) {
-        passwordInput.classList.add("bad-input");
-        confirmPasswordInput.classList.add("bad-input");
-      } else {
-        passwordInput.classList.remove("bad-input");
-        confirmPasswordInput.classList.remove("bad-input");
-      }
-    })
-  </script>
-
+  <h1>Sign up form</h1>
 </body>
 
 </html>
