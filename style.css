@@ -16,6 +16,10 @@ body {
   min-height: 100vh;
 }
 
+em {
+  font-style: italic;
+}
+
 .left-side {
   flex: 1 30%;
   background-image: url("./resources/halie-west-25xggax4bSA-unsplash.jpg");
@@ -46,4 +50,100 @@ body {
 
 .right-side {
   flex: 1 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: aliceblue;
+  color: rgb(9, 11, 41);
+}
+
+.right-side header,
+.right-side main form,
+.right-side footer {
+  padding-left: 2rem;
+}
+
+.right-side header p {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  max-width: 60ch;
+  font-size: 1.2rem;
+}
+
+.right-side main {
+  background-color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.right-side main form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.right-side main form legend {
+  flex: 1 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.right-side main form .input-container {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.input-container input {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  min-height: 1rem;
+  padding: 3px 5px;
+}
+
+input:focus {
+  border: 1px solid rgb(0, 132, 255);
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+.input-container.error::after {
+  content: "Password do not match";
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: red;
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+footer button {
+  background-color: #596d48;
+  color: white;
+  border: none;
+  padding: 8px 36px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+footer p a {
+  color: #596d48;
+  text-decoration: none;
 }
