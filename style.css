@@ -140,12 +140,26 @@ form div input {
   border-radius: 5px;
 }
 
+
 form div input:focus {
   outline: rgba(0, 0, 255, 0.521) solid 1px;
 }
 
 form div input:invalid {
   border: rgba(255, 0, 0, 0.521) solid 1px;
+}
+
+form div>div {
+  position: relative;
+}
+
+form div>div::after {
+  content: "* Passwords do not match";
+  color: rgba(255, 0, 0, 0.74);
+  position: absolute;
+  bottom: calc(-0.7rem - 2px);
+  left: 0;
+  font-size: 0.7rem;
 }
 
 #bottom_section {
